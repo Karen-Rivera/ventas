@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<body style="background-color:hsl(39, 100%, 50%)">
+
+    <br />
+    <br />
+    <center>
+
+        <div class="jumbotron" style=" background-color:white;">
+            <h1>Venta de todo tipo de articulos </h1>
+            <p class="lead">¡Los mejores proveedores de todo tipo de articulos!</p>
+            <p><a href="https://todomayoreo.com/" class="btn btn-primary btn-lg " style="background-color:green"; >Ir a pagina de articulos &raquo;</a></p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                
+                <h2 >@Html.ActionLink( "PRODUCTOS", "Index", "PRODUCTOS")</h2>
+                <p>
+                    Agrega los productos que desees
+                </p>
+                <p><a class="btn btn-default" href="https://todomayoreo.com/">Más información &raquo;</a></p>
+            </div>
+            <div class="col-md-5">
+                <h2 style="color:green">@Html.ActionLink("DATOS", "Index", "DATOS")</h2>
+                <p>Ingresa datos del proveedor.</p>
+                <p><a class="btn btn-default" href="https://todomayoreo.com/"> Más información &raquo;</a></p>
+            </div>
+
+        </div>
+        </center>
+        </body>
